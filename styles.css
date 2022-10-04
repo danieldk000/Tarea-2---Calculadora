@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.Contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px;
+}
+
+.Calculadora{
+display: flex;
+flex-direction: column;
+width: 500px;
+font-size: 2rem;
+border: 1px solid gray;
+}
+
+.Calc_Display {
+padding: 25px 15px;
+width: 100%;
+text-align: right;
+border: 1px solid gray;
+overflow-x: auto;
+}
+
+.Calc_Key{
+display: flex;
+width: 100%;
+}
+
+.Key_Numeros{
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+}
+
+.Key_Btn{
+width: 25%;
+padding: 15px 0;
+text-align: center;
+cursor: pointer;
+background-color: white;
+border: 1px solid gray;    
+}
+
+.Key_Btn:hover {
+    filter: brightness(80%);
+    transition: filter .25s;
+}
+
+.Key_Btn.orange{
+    background-color: orange;
+}
+
+.Key_Btn.large{
+    width: 50%;
+}
+
+.Key_Btn.dark{
+    background-color: lightgray;
+}
